@@ -16,7 +16,7 @@ Number.prototype.div = function (x) {
 var SmartSchedulerBot = new telegraf(process.env.SMART_SCHEDULER_TLGRM_API_TOKEN);
 
 let dbUrl;
-if (process.env.IS_HEROKU == 'true') {
+if (process.env.IS_HEROKU == 'false') {
    dbUrl = new URL(process.env.DATABASE_URL);
 } else {
    dbUrl = new URL(process.env.SMART_SCHEDULER_DB_URL);
