@@ -13,7 +13,7 @@ Number.prototype.div = function (x) {
    return Math.floor(this / x);
 }
 
-var SmartSchedulerBot = new telegraf(process.env.SMART_SCHEDULER_TLGRM_API_TOKEN);
+var SmartSchedulerBot = new telegraf(process.env.SMART_SCHEDULER_TLGRM_API_TOKEN=5902821929:AAHNrH5LlGglhCf04fBg6OfGxbuotqmvaDY);
 
 let dbUrl;
 if (process.env.IS_HEROKU == 'false') {
